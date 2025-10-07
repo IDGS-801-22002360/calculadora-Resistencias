@@ -121,9 +121,8 @@ function App() {
             <div className="calculator-layout">
                 <div className="calculator-controls">
                     <div className="select-group">
-                        <label>Banda 1 </label>
                         <select value={band1} onChange={(e) => setBand1(e.target.value)}>
-                            <option value="">Selecciona color</option>
+                            <option value="">Banda 1</option>
                             {Object.keys(colors).map((color) => (
                                 <option key={color} value={color}>
                                     {color.charAt(0).toUpperCase() + color.slice(1)}
@@ -133,9 +132,8 @@ function App() {
                     </div>
 
                     <div className="select-group">
-                        <label>Banda 2 </label>
                         <select value={band2} onChange={(e) => setBand2(e.target.value)}>
-                            <option value="">Selecciona color</option>
+                            <option value="">Banda 2</option>
                             {Object.keys(colors).map((color) => (
                                 <option key={color} value={color}>
                                     {color.charAt(0).toUpperCase() + color.slice(1)}
@@ -145,9 +143,8 @@ function App() {
                     </div>
 
                     <div className="select-group">
-                        <label>Multiplicador </label>
                         <select value={multiplier} onChange={(e) => setMultiplier(e.target.value)}>
-                            <option value="">Selecciona color</option>
+                            <option value="">Multiplicador</option>
                             {Object.keys(multipliers).map((color) => (
                                 <option key={color} value={color}>
                                     {color.charAt(0).toUpperCase() + color.slice(1)}
@@ -157,9 +154,8 @@ function App() {
                     </div>
 
                     <div className="select-group">
-                        <label>Tolerancia </label>
                         <select value={tolerance} onChange={(e) => setTolerance(e.target.value)}>
-                            <option value="">Selecciona color</option>
+                            <option value="">Tolerancia</option>
                             {Object.keys(tolerances).map((color) => (
                                 <option key={color} value={color}>
                                     {color.charAt(0).toUpperCase() + color.slice(1)}
