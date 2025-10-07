@@ -1,0 +1,85 @@
+.calculator-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.calculator-controls {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.select-group label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.select-group select {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  background: #f8fafc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.select-group select:hover {
+  background: #eef2ff;
+}
+
+.btn-calc {
+  padding: 0.75rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-calc:hover {
+  background: var(--secondary-color);
+}
+
+.result-panel {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.resistor-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e2e8f0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--card-shadow);
+}
+
+.band {
+  width: 20px;
+  height: 100px;
+  margin: 0 6px;
+  border-radius: 0.5rem;
+}
+
+/* Colores */
+.color-negro { background: #000; }
+.color-marrón { background: #8B4513; }
+.color-rojo { background: #FF0000; }
+.color-naranja { background: #FFA500; }
+.color-amarillo { background: #FFD700; }
+.color-verde { background: #008000; }
+.color-azul { background: #0000FF; }
+.color-violeta { background: #8A2BE2; }
+.color-gris { background: #A9A9A9; }
+.color-blanco { background: #FFFFFF; border: 1px solid #ccc; }
+.color-dorado { background: #C9B037; }
+.color-plateado { background: #C0C0C0; }
